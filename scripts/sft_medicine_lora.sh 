@@ -1,0 +1,51 @@
+# 22GiB
+# You can refer to `https://github.com/QwenLM/Qwen2-VL` for the meaning of the `MAX_PIXELS` parameter.
+# 1003520 = 1280 * 28 * 28
+
+export MAX_PIXELS=1003520
+CUDA_VISIBLE_DEVICES=0,1 NPROC_PER_NODE=2 NNODES=1 NODE_RANK=0 MASTER_ADDR=192.168.2.129 MASTER_PORT=6001 swift sft \
+    --model '/home/kt/gjj/workspace/cache/model_file/Qwen2-VL-base' \
+    --model_type 'qwen2_vl' \
+    --template 'qwen2_vl' \
+    --system "你是一位资深的口腔影像诊断专家，精通口腔 CT 影像分析和牙周炎分期评估，请结合输入的的口腔CT图像和健康相关问题，提供专业、严谨的医学解答。" \
+    --dataset '/home/kt/gjj/workspace/cache/datasets/yazhouyan/annotations.json' \
+    --train_type lora \
+    --torch_dtype bfloat16 \
+    --target_modules "q_proj" "v_proj" "o_proj" "gate_proj" "up_proj" "down_proj"  \
+    --num_train_epochs 4 \
+    --per_device_train_batch_size 2 \
+    --per_device_eval_batch_size 2 \
+    --gradient_accumulation_steps 4 \
+    --learning_rate 3e-6 \
+    --freeze_vit true \
+    --eval_steps 100 \
+    --save_steps 100 \
+    --save_total_limit 5 \
+    --logging_steps 5 \
+    --max_length 1024 \
+    --output_dir '/home/kt/gjj/workspace/UAVVQA/output/medicine/models' \
+    --logging_dir '/home/kt/gjj/workspace/UAVVQA/output/medicine/logs' \
+    --warmup_ratio 0.05 \
+    --adam_beta2 0.95 \
+    --lr_scheduler_type 'cosine' \
+    --weight_decay 0.01 \
+    --dataloader_num_workers 6 \
+    --report_to tensorboard \
+    --lora_rank 16 \
+    --lora_alpha 32 \
+    --gradient_checkpointing_kwargs '{"use_reentrant": false}' \
+    --deepspeed 'zero2'
+
+#    --neftune_noise_alpha 4 \
+
+#        --gradient_checkpointing false \
+#    --text_lora_rank 8
+#    --cross_attention_lora_rank 32 \
+#    --add_version False \
+#    --ignore_args_error True \
+#    --neftune_noise_alpha 6 \
+#    --max_train_samples 100 \
+#    --max_eval_samples 50 \
+#        --lr_scheduler_kwargs '{"eta_min": 1e-6}' \ huggingface不支持，要用pytorch
+#   --report_to tensorboard wandb swanlab
+#    --val_dataset "/mnt/7t/gjj/workspace/cache/datasets/VisDrone/annotations/val/annotations_val.json" \

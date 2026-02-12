@@ -1,0 +1,82 @@
+[
+  {
+    "id": "train_0001_task1",
+    "image": [
+      "data/images/patient_0045.jpg"
+    ],
+    "conversations": [
+      {
+        "role": "user",
+        "content": "Picture 1: <img>data/images/patient_0045.jpg</img>\n请结合提供的口腔图像，判断当前口腔状况是否存在慢性牙周炎？仅从[慢性牙周炎1期、慢性牙周炎2期、慢性牙周炎3期、慢性牙周炎4期、健康]中选取1个符合的答案。"
+      },
+      {
+        "role": "assistant",
+        "content": "慢性牙周炎3期"
+      }
+    ]
+  },
+  {
+    "id": "train_0002_task1",
+    "image": [
+      "data/images/patient_0089.jpg"
+    ],
+    "conversations": [
+      {
+        "role": "user",
+        "content": "Picture 1: <img>data/images/patient_0089.jpg</img>\n请结合提供的口腔图像，判断当前口腔状况是否存在慢性牙周炎？仅从[慢性牙周炎1期、慢性牙周炎2期、慢性牙周炎3期、慢性牙周炎4期、健康]中选取1个符合的答案。"
+      },
+      {
+        "role": "assistant",
+        "content": "健康"
+      }
+    ]
+  },
+  {
+    "id": "train_0003_task2_positive",
+    "image": [
+      "data/images/patient_0112.jpg"
+    ],
+    "conversations": [
+      {
+        "role": "user",
+        "content": "Picture 1: <img>data/images/patient_0112.jpg</img>\n已知结合口腔CT图像判断当前存在[慢性牙周炎2期]，请进一步分析该慢性牙周炎是否叠加了其他口腔病变？仅从[牙龈瘤、牙龈炎、牙周牙髓联合病变、无叠加病变]中选取1个符合的答案。"
+      },
+      {
+        "role": "assistant",
+        "content": "牙龈瘤"
+      }
+    ]
+  },
+  {
+    "id": "train_0003_task2_positive_duplicate",
+    "image": [
+      "data/images/patient_0112.jpg"
+    ],
+    "conversations": [
+      {
+        "role": "user",
+        "content": "Picture 1: <img>data/images/patient_0112.jpg</img>\n已知结合口腔CT图像判断当前存在[慢性牙周炎2期]，请进一步分析该慢性牙周炎是否叠加了其他口腔病变？仅从[牙龈瘤、牙龈炎、牙周牙髓联合病变、无叠加病变]中选取1个符合的答案。"
+      },
+      {
+        "role": "assistant",
+        "content": "牙龈瘤"
+      }
+    ]
+  },
+  {
+    "id": "train_0004_task2_negative",
+    "image": [
+      "data/images/patient_0233.jpg"
+    ],
+    "conversations": [
+      {
+        "role": "user",
+        "content": "Picture 1: <img>data/images/patient_0233.jpg</img>\n已知结合口腔CT图像判断当前存在[慢性牙周炎1期]，请进一步分析该慢性牙周炎是否叠加了其他口腔病变？仅从[牙龈瘤、牙龈炎、牙周牙髓联合病变、无叠加病变]中选取1个符合的答案。"
+      },
+      {
+        "role": "assistant",
+        "content": "无叠加病变"
+      }
+    ]
+  }
+]

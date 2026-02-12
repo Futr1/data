@@ -1,0 +1,34 @@
+[
+  {
+    "id": "val_0001_task1",
+    "image": [
+      "data/images/patient_1201.jpg"
+    ],
+    "conversations": [
+      {
+        "role": "user",
+        "content": "Picture 1: <img>data/images/patient_1201.jpg</img>\n请结合提供的口腔图像，判断当前口腔状况是否存在慢性牙周炎？仅从[慢性牙周炎1期、慢性牙周炎2期、慢性牙周炎3期、慢性牙周炎4期、健康]中选取1个符合的答案。"
+      },
+      {
+        "role": "assistant",
+        "content": "慢性牙周炎4期"
+      }
+    ]
+  },
+  {
+    "id": "val_0002_task2",
+    "image": [
+      "data/images/patient_1205.jpg"
+    ],
+    "conversations": [
+      {
+        "role": "user",
+        "content": "Picture 1: <img>data/images/patient_1205.jpg</img>\n已知结合口腔CT图像判断当前存在[慢性牙周炎3期]，请进一步分析该慢性牙周炎是否叠加了其他口腔病变？仅从[牙龈瘤、牙龈炎、牙周牙髓联合病变、无叠加病变]中选取1个符合的答案。"
+      },
+      {
+        "role": "assistant",
+        "content": "牙周牙髓联合病变"
+      }
+    ]
+  }
+]

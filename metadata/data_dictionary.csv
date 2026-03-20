@@ -1,0 +1,13 @@
+field_name,modality,type,description,release_status
+patient_id,metadata,string,De-identified patient identifier,example_only
+sex,ehr,categorical,Biological sex recorded in chart,example_only
+age,ehr,integer,Age at examination,example_only
+chief_complaint,ehr,text,Primary complaint at presentation,example_only
+history_of_present_illness,ehr,text,Current periodontal symptom history,example_only
+past_history,ehr,text,Relevant medical and dental history,example_only
+smoking_status,ehr,categorical,Smoking exposure summary,example_only
+diabetes_status,ehr,categorical,Diabetes and glycemic control summary,example_only
+specialized_periodontal_examination,ehr,object,Structured periodontal examination fields,example_only
+panoramic_radiograph,image,string,Path or identifier for panoramic radiograph,not_public
+diagnosis_label,target,categorical,One of the seven manuscript labels,public_schema
+quality_scheme_id,target,string,Diagnosis-conditioned treatment scheme identifier,example_only

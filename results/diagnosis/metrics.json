@@ -1,0 +1,9 @@
+{
+  "num_references": 1,
+  "num_compared": 1,
+  "num_correct": 1,
+  "accuracy": 1.0,
+  "coverage": 1.0,
+  "missing_prediction_ids": [],
+  "scoring_rule": "answer_only"
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "scheme_id": "G-TX-001",
+    "diagnosis_label": "gingivitis",
+    "title": "Non-surgical gingivitis management",
+    "keywords": ["bleeding", "plaque", "gingival inflammation"],
+    "contraindications": [],
+    "recommended_steps": [
+      "Oral hygiene instruction",
+      "Supragingival scaling",
+      "Short-interval reassessment"
+    ],
+    "follow_up": [
+      "Review plaque control at 2-4 weeks"
+    ],
+    "source": "Curated internal library example"
+  },
+  {
+    "scheme_id": "P3-TX-001",
+    "diagnosis_label": "periodontitis_stage_iii",
+    "title": "Stage III periodontitis care pathway",
+    "keywords": ["deep pocket", "mobility", "vertical bone loss"],
+    "contraindications": ["acute_uncontrolled_systemic_risk"],
+    "recommended_steps": [
+      "Comprehensive periodontal charting and risk review",
+      "Initial non-surgical periodontal therapy",
+      "Re-evaluation of residual pockets",
+      "Specialist escalation for advanced sites"
+    ],
+    "follow_up": [
+      "4-8 week review",
+      "Maintenance interval planning"
+    ],
+    "source": "Curated internal library example"
+  },
+  {
+    "scheme_id": "CPEL-TX-001",
+    "diagnosis_label": "combined_periodontal_endodontic_lesion",
+    "title": "Combined periodontal-endodontic lesion pathway",
+    "keywords": ["endo-perio", "combined lesion", "pulpal involvement"],
+    "contraindications": ["missing_endodontic_assessment"],
+    "recommended_steps": [
+      "Confirm periodontal and endodontic findings",
+      "Coordinate endodontic and periodontal sequencing",
+      "Reassess healing after acute-phase control"
+    ],
+    "follow_up": [
+      "Joint periodontal and endodontic review"
+    ],
+    "source": "Curated internal library example"
+  }
+]

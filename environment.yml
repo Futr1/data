@@ -1,0 +1,8 @@
+name: periodx-tx-net
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - PyYAML>=6.0

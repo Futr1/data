@@ -1,0 +1,44 @@
+backend: ms_swift
+working_dir: multimodal/framework/ms-swift
+model_name_or_path: Qwen/Qwen2-VL-2B-Instruct
+model_type: qwen2_vl
+template: qwen2_vl
+system_prompt: >-
+  You are a senior periodontal imaging specialist. Use the panoramic radiograph
+  and structured EHR fields to provide a seven-class periodontal diagnosis with
+  concise, clinically reviewable reasoning.
+dataset_path: data/samples/dataset_train.sample.json
+train_type: lora
+torch_dtype: bfloat16
+target_modules:
+  - q_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+num_train_epochs: 4
+per_device_train_batch_size: 4
+per_device_eval_batch_size: 4
+gradient_accumulation_steps: 1
+learning_rate: 2e-5
+freeze_vit: true
+eval_steps: 100
+save_steps: 100
+save_total_limit: 5
+logging_steps: 5
+max_length: 1024
+output_dir: outputs/periom_dx/sft_model
+logging_dir: outputs/periom_dx/logs
+warmup_ratio: 0.05
+adam_beta2: 0.95
+lr_scheduler_type: cosine
+weight_decay: 0.01
+dataloader_num_workers: 6
+report_to:
+  - tensorboard
+lora_rank: 8
+lora_alpha: 32
+gradient_checkpointing_kwargs:
+  use_reentrant: false
+deepspeed: zero2

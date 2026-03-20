@@ -1,0 +1,16 @@
+library_path: examples/example_quality_scheme.json
+index_output: results/drafting/quality_scheme_index.json
+retrieval_output: results/drafting/retrieval_results.json
+filtered_output: results/drafting/filtered_results.json
+draft_output: results/drafting/example_draft.xml
+top_k: 40
+retrieval_backend: elasticsearch
+initial_beam_width: 40
+overlap_threshold: 0.4
+cue_memory_frozen_during_eval: true
+retrieval_eval_cutoff: 3
+query:
+  diagnosis_label: periodontitis_stage_iii
+  text: stage III periodontitis with deep pockets and tooth mobility
+patient_flags:
+  - none

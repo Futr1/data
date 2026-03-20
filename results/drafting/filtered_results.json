@@ -1,0 +1,29 @@
+{
+  "query": {
+    "diagnosis_label": "periodontitis_stage_iii",
+    "text": "stage III periodontitis with deep pockets and tooth mobility"
+  },
+  "patient_flags": [],
+  "candidates": [
+    {
+      "scheme_id": "P3-TX-001",
+      "diagnosis_label": "periodontitis_stage_iii",
+      "title": "Stage III periodontitis care pathway",
+      "score": 12.0,
+      "contraindications": [
+        "acute_uncontrolled_systemic_risk"
+      ],
+      "recommended_steps": [
+        "Comprehensive periodontal charting and risk review",
+        "Initial non-surgical periodontal therapy",
+        "Re-evaluation of residual pockets",
+        "Specialist escalation for advanced sites"
+      ],
+      "follow_up": [
+        "4-8 week review",
+        "Maintenance interval planning"
+      ],
+      "source": "Curated internal library example"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "patient_id": "example_001",
+  "sex": "female",
+  "age": 47,
+  "chief_complaint": "Bleeding gums and loose molars for 6 months.",
+  "history_of_present_illness": "Symptoms worsened during the last 2 months with occasional halitosis and chewing discomfort.",
+  "past_history": "Hypertension controlled with medication. No prior periodontal surgery.",
+  "smoking_status": "never",
+  "diabetes_status": "none_reported",
+  "specialized_periodontal_examination": {
+    "deepest_pocket_mm": 7,
+    "bleeding_on_probing": "generalized",
+    "mobility": "grade_2_localized",
+    "furcation_involvement": "present",
+    "bone_loss_pattern": "vertical_and_horizontal"
+  }
+}

@@ -1,0 +1,11 @@
+<orman_response>
+  <think>Radiographic bone loss, generalized bleeding on probing, and mobility support a severe periodontitis label. The treatment draft must stay inside the curated scheme library.</think>
+  <answer>periodontitis_stage_iii</answer>
+  <diagnosis label="periodontitis_stage_iii">Generalized stage III periodontitis is the best-matching label in the seven-class schema.</diagnosis>
+  <treatment_draft scheme_id="P3-TX-001">
+    <step>Initial periodontal education and oral hygiene reinforcement.</step>
+    <step>Full-mouth supragingival and subgingival debridement.</step>
+    <step>Risk-factor management and scheduled re-evaluation.</step>
+    <step>Escalate to specialist review for sites with persistent deep pockets.</step>
+  </treatment_draft>
+</orman_response>

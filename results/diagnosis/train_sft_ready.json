@@ -1,0 +1,14 @@
+[
+  {
+    "problem": "Panoramic radiograph: REDACTED/panorama_train_001.png\nStructured EHR:\n- sex: female\n- age: 47\n- chief_complaint: Bleeding gums and chewing discomfort.\n- history_of_present_illness: Progressive gingival bleeding and mobility over 6 months.\n- past_history: Hypertension controlled with medication.\n- smoking_status: never\n- diabetes_status: none_reported\n- specialized_periodontal_examination: {\"bone_loss_pattern\": \"vertical_and_horizontal\", \"deepest_pocket_mm\": 7, \"mobility\": \"grade_2_localized\"}\nQuestion: Provide a seven-category periodontal diagnosis and a concise explanation for clinician review.",
+    "thinking": "<think>Deep pocketing, mobility, and advanced bone loss support a severe periodontitis category.</think>",
+    "solution": "<answer>periodontitis_stage_iii</answer>",
+    "image": "REDACTED/panorama_train_001.png"
+  },
+  {
+    "problem": "Panoramic radiograph: REDACTED/panorama_train_002.png\nStructured EHR:\n- sex: male\n- age: 29\n- chief_complaint: Gum swelling and brushing-related bleeding.\n- history_of_present_illness: Localized inflammation with no reported tooth mobility.\n- past_history: No systemic disease reported.\n- smoking_status: never\n- diabetes_status: none_reported\n- specialized_periodontal_examination: {\"bone_loss_pattern\": \"none_significant\", \"deepest_pocket_mm\": 3, \"mobility\": \"none\"}\nQuestion: Provide a seven-category periodontal diagnosis and a concise explanation for clinician review.",
+    "thinking": "<think>Inflammatory gingival findings without staged radiographic destruction favor gingivitis.</think>",
+    "solution": "<answer>gingivitis</answer>",
+    "image": "REDACTED/panorama_train_002.png"
+  }
+]

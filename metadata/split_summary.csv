@@ -1,0 +1,7 @@
+stage,count,release_status,notes
+initial_cohort,3500,summary_only,Two-center retrospective cohort before exclusions
+excluded_incomplete,620,summary_only,Cases removed because required imaging or EHR elements were incomplete or irreconcilable during quality control
+final_analysis_cohort,2880,summary_only,Patient-level cohort used for manuscript analysis
+train,2016,summary_only,Training split derived from West China Hospital of Stomatology
+validation,576,summary_only,Validation split derived from West China Hospital of Stomatology
+independent_test,288,summary_only,Held-out test split sampled under a prespecified two-center strategy
